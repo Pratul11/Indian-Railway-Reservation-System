@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRRS Indian Railway Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="head-container">
+            <nav>
+                <div class="logo"> 
+                    <img src="./asset/train-logo.webp" alt="Left Logo">
+                </div>
+                <div class="menu-btn" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">LOGIN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#">AGENT LOGIN</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">AGENT LOGIN</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                <div class="logo1">
+                    <img src="./asset/irctc-india-logo.webp" alt="Left Logo">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="search-train">
+
+        <div class="card-container">
+            <div class="btn">
+                <button type="pnr">PNR STATUS</button>
+                <button type="chart">CHARTS / VACANCY</button>
+            </div>
+            <h2>BOOK TICKET</h2>
+            <form>
+                <div class="form1">
+                    <label for="departure">Departure Station:</label>
+                    <input type="text" id="departure" name="departure" required>
+                    
+                    <label for="destination">Destination Station:</label>
+                    <input type="text" id="destination" name="destination" required>
+
+                    <label for="date">Date of Travel:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form2">
+                    <label for="date">Date of Travel:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="date">Date of Travel:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <img src="./asset/irctc-india-logo.webp">
+                </div>
+            </form>
+            <button class="button1" type="submit">Search Trains</button>
+        </div>
+
+        <div class="additional-content">
+            <h1>INDIAN RAILWAYS</h1>
+            <p>Safety | Security | Punctuality</p>
+        </div>
+
+    </div>
+    <div id="advertisement">
+        <hr>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
