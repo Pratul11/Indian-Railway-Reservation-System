@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRRS Indian Railway Reservation System</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="header">
@@ -24,7 +25,7 @@
                     <li><a href="#">CONTACT US</a></li>
                     </ul>
                 <div class="logo1">
-                    <img src="./asset/irctc-india-logo.webp" alt="Left Logo">
+                    <img src="./asset/irrs-india-logo1.png" alt="Left Logo">
                 </div>
             </nav>
         </div>
@@ -45,18 +46,34 @@
                     <label for="destination">Destination Station:</label>
                     <input type="text" id="destination" name="destination" required>
 
-                    <label for="date">Date of Travel:</label>
-                    <input type="date" id="date" name="date" required>
+                    <select name="text-id" size=1>
+                        <option value="choice-id1">GENERAL</option>
+                        <option value="choice-id2">LADIES</option>
+                        <option value="choice-id3">LOWER BERTH/SR.CITIZEN</option>
+                        <option value="choice-id4">PERSON WITH DISABILITY</option>
+                        <option value="choice-id5">DUTY PASS</option>
+                        <option value="choice-id6">TATKAL</option>
+                        <option value="choice-id7">PREMIUM TATKAL</option>
+                    </select>
                 </div>
                 
                 <div class="form2">
                     <label for="date">Date of Travel:</label>
                     <input type="date" id="date" name="date" required>
                     
-                    <label for="date">Date of Travel:</label>
-                    <input type="date" id="date" name="date" required>
+                    <select name="text-id-class" size=1>
+                        <option value="choice-id11">All Classes</option>
+                        <option value="choice-id21">Anubhuti Class (EA)</option>
+                        <option value="choice-id31">AC First Class (1A)</option>
+                        <option value="choice-id41">Exec. Chair Car (EC)</option>
+                        <option value="choice-id51">AC 2 Tier (2A)</option>
+                        <option value="choice-id61">AC 3 Tier (3A)</option>
+                        <option value="choice-id71">AC 3 Economy (3E)</option>
+                        <option value="choice-id81">Sleeper (SL)</option>
+                        <option value="choice-id91">Second Sitting (2S)</option>
+                    </select>
                     
-                    <img src="./asset/irctc-india-logo.webp">
+                    <img src="./asset/irrs-india-logo1.png">
                 </div>
             </form>
             <button class="button1" type="submit">Search Trains</button>

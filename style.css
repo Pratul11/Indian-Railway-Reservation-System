@@ -154,7 +154,7 @@ nav ul li a.active {
 .card-container input {
   padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(111, 110, 110);
   border-radius: 4px;
   width: 290px;
   box-sizing: border-box;
@@ -162,7 +162,7 @@ nav ul li a.active {
 .card-container .form2 input {
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(111, 110, 110);
   border-radius: 4px;
   width: 200px;
   box-sizing: border-box;
@@ -197,4 +197,18 @@ nav ul li a.active {
 .additional-content p {
   font-size: 22px;
 
+}
+
+select {
+  padding: 8px;
+}
+
+.form2 select {
+  margin-top: 26px;
+}
+
+.form1 select {
+  margin-top: 11px;
+  border: 1px solid rgb(111, 110, 110);
+  border-radius: 4px;
 }
