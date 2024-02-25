@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="head-container">
             <nav>
-                <div class="logo"> 
+                <div class="logo">
                     <img src="./asset/train-logo.webp" alt="Left Logo">
                 </div>
                 <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -23,7 +25,7 @@
                     <li><a href="#">CONTACT US</a></li>
                     <li><a href="#">AGENT LOGIN</a></li>
                     <li><a href="#">CONTACT US</a></li>
-                    </ul>
+                </ul>
                 <div class="logo1">
                     <img src="./asset/irrs-india-logo1.png" alt="Left Logo">
                 </div>
@@ -38,15 +40,15 @@
                 <button type="chart">CHARTS / VACANCY</button>
             </div>
             <h2>BOOK TICKET</h2>
-            <form>
+            <form action="connect.php" method="post">
                 <div class="form1">
                     <label for="departure">Departure Station:</label>
                     <input type="text" id="departure" name="departure" required>
-                    
+
                     <label for="destination">Destination Station:</label>
                     <input type="text" id="destination" name="destination" required>
 
-                    <select name="text-id" size=1>
+                    <select name="quota-id" size=1>
                         <option value="choice-id1">GENERAL</option>
                         <option value="choice-id2">LADIES</option>
                         <option value="choice-id3">LOWER BERTH/SR.CITIZEN</option>
@@ -56,12 +58,12 @@
                         <option value="choice-id7">PREMIUM TATKAL</option>
                     </select>
                 </div>
-                
+
                 <div class="form2">
                     <label for="date">Date of Travel:</label>
                     <input type="date" id="date" name="date" required>
-                    
-                    <select name="text-id-class" size=1>
+
+                    <select name="classID" size=1>
                         <option value="choice-id11">All Classes</option>
                         <option value="choice-id21">Anubhuti Class (EA)</option>
                         <option value="choice-id31">AC First Class (1A)</option>
@@ -72,7 +74,7 @@
                         <option value="choice-id81">Sleeper (SL)</option>
                         <option value="choice-id91">Second Sitting (2S)</option>
                     </select>
-                    
+
                     <img src="./asset/irrs-india-logo1.png">
                 </div>
             </form>
@@ -90,4 +92,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
